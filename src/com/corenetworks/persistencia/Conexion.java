@@ -11,7 +11,7 @@ public class Conexion {
     public void abriConexion() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
         miConexion = DriverManager.getConnection(
-                "jdbc:postgresql://127.0.0.1:5432/northwind",
+                "jdbc:postgresql://127.0.0.1:5432/nautico",
                 "postgres", "postgres");
         System.out.println("Exito al abrir la conexion");
     }
